@@ -24,12 +24,12 @@ export default class ExampleApp extends React.Component {
       >
         <div className={styles.label}>
           <label>
-            Song duration in seconds:
-            <input
-                name="songLength"
-                type="number"
-                value={this.state.duration}
-                onChange={this.handleInputChange} />
+            Song duration in seconds: 30
+            {/*<input*/}
+                {/*name="songLength"*/}
+                {/*type="number"*/}
+                {/*value={this.state.duration}*/}
+                {/*onChange={this.handleInputChange} />*/}
           </label>
         </div>
         <PlayCounter
