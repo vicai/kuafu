@@ -4,7 +4,7 @@
 
 React countdown widget with a arc progress bar.
 
-> A React & Redux project
+> A React & D3 project
 
 ## Build Setup
 
