@@ -1,0 +1,21 @@
+@import "../global";
+
+:local(.button) {
+  position: absolute;
+}
+
+:local(.container) {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+:local(.progressBar) {
+  height: 100%;
+  width: 100%;
+}
+
+:local(.icon) {
+  padding-left: 4px;
+  padding-top: 4px;
+}
