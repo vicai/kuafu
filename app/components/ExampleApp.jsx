@@ -6,7 +6,7 @@ import styles from './ExampleApp.scss';
 export default class ExampleApp extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {duration: 30};
+    this.state = {duration: 30000};
 
     this.handleInputChange = this.handleInputChange.bind(this);
   }

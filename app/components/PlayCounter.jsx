@@ -27,7 +27,7 @@ export default class PlayCounter extends React.Component {
   handleClick() {
     const { stopped } = this.state;
     if (stopped) {
-      this.intervalId = setInterval(this.tick, 1000);
+      this.intervalId = setInterval(this.tick, 10);
     } else {
       clearInterval(this.intervalId);
     }
@@ -35,7 +35,7 @@ export default class PlayCounter extends React.Component {
   }
 
   tick() {
-    this.setState({duration: this.state.duration - 1 });
+    this.setState({duration: this.state.duration - 10 });
     if (this.state.duration <= 0) {
       clearInterval(this.intervalId);
       this.setState({
@@ -57,10 +57,9 @@ export default class PlayCounter extends React.Component {
   
   getDuration() {
     const { duration } = this.state;
-    const { height } = this.props;
     
     return (<div style={{fontSize: "20px"}}>
-      {duration}
+      {Math.floor(duration/1000)}
     </div>);
   }
   
